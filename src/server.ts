@@ -1,5 +1,6 @@
-import express from "express";
-import router from "./routers";
+import express from 'express';
+import router from './routers';
+import '@services/whatsappBot';
 
 const app = express();
 
