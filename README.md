@@ -57,4 +57,20 @@ Que robô hein !! Ele também sabe o "suave"
 
 ![](public/3-suave.PNG)	
 
+* Fazendo a pesquisa 
 
+```sh	
+Escrevendo "Pesquisar" e depois o nome do produto ele diz para você aguardar
+```	
+![](public/4-pesquisar.PNG)	
+
+```sh	
+Após "Pesquisar" o robô diz para aguardar.
+```	
+![](public/4-pesquisar.PNG)	
+
+```sh	
+E no final de tudo ele retorna uma lista com preço e link para comprar esses produtos
+```	
+![](public/5-mostrar1.PNG)	
+![](public/6-mostrar2.PNG)
