@@ -7,7 +7,7 @@ Tirar um tempo para navegar na internet e fazer aquela "comprinha" no melhor sit
 
 Para realização desse projeto foi necessário usar o **Venom-Bot** para fazer integração com Whatsapp associado ao **Natural language processing** para deixar o bot mais um pouquinho inteligente (Não foi muita coisa, so brinquei um pouco rsrsrs). E uma das partes principais do projeto que é extração dessas inofrmações no site do **Zoom.br** utilizei o **Puppeteer**. Como bônus, deixei um servidor **Express** para que a pesquisa de produtos esteja também disponivel em forma de API.
 
-### Me siga no instagram ([@luteroelavoco](https://instagram.com/luteroelavoco), lá tem um video no meu Reels mostrando o funcionamento do projeto.
+#### Me siga no instagram ([@luteroelavoco](https://www.instagram.com/luteroelavoco/), lá tem um video no meu Reels mostrando o funcionamento do projeto.
 
 ![](public/whatsappBot.png)	
 
