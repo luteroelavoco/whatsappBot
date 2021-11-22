@@ -33,6 +33,7 @@
     "@types/express": "^4.17.13",
     "eslint": "^7.19.0",
     "express": "^4.17.1",
+    "node-nlp": "^4.22.1",
     "puppeteer": "^11.0.0",
     "ts-jest": "^26.5.1",
     "venom-bot": "^4.0.1"

@@ -1,8 +1,12 @@
 import express from 'express';
 import router from './routers';
-import '@services/whatsappBot';
+import { trainNLP } from '@services/Inplementation/naturalLanguage';
+import { whatsappBotProvider } from '@useCases/whatsappBotUseCases';
 
 const app = express();
+
+trainNLP();
+whatsappBotProvider.start();
 
 app.use(router);
 

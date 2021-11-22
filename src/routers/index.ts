@@ -1,5 +1,5 @@
 import express from 'express';
-import Zoom from '@services/zoom';
+import { zoomController } from '@useCases/ZoomUseCases';
 
 const router = express.Router();
 
@@ -8,9 +8,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/zoom/:search', async (req, res) => {
-  const { search } = req.params;
-  const result = await Zoom(search);
-  return res.json({ result });
+  return zoomController.handle(req, res);
 });
 
 export default router;

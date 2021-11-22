@@ -26,7 +26,11 @@
       "@controllers/*" : ["./src/controllers/*"],
       "@models/*" : ["./src/models/*"],
       "@config/*" : ["./src/config/*"],
-      "@services/*" : ["./src/services/*"]
+      "@services/*" : ["./src/services/*"],
+      "@entities/*" : ["./src/entities/*"],
+      "@providers/*" : ["./src/providers/*"],
+      "@useCases/*" : ["./src/useCases/*"],
+      "@utils/*" : ["./src/utils/*"]
     }
   },
   "include": [

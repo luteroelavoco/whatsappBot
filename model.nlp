@@ -1,0 +1,595 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "trainByDomain": false,
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "oi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "ola": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hell": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "ai,e": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "oie": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "irma,suav": {
+            "intent": "greetings.suave",
+            "domain": "default"
+          },
+          "ai,e,suav": {
+            "intent": "greetings.suave",
+            "domain": "default"
+          },
+          "ai,e,irma": {
+            "intent": "greetings.suave",
+            "domain": "default"
+          },
+          "a,boa,e,qual": {
+            "intent": "greetings.aboa",
+            "domain": "default"
+          },
+          "boa,noit": {
+            "intent": "greetings.greeting.night",
+            "domain": "default"
+          },
+          "bom,dia": {
+            "intent": "greetings.greeting.day",
+            "domain": "default"
+          },
+          "boa,tard": {
+            "intent": "greetings.greeting.noon",
+            "domain": "default"
+          },
+          "corn": {
+            "intent": "corno",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.hello": "default",
+          "greetings.suave": "default",
+          "greetings.aboa": "default",
+          "greetings.greeting.night": "default",
+          "greetings.greeting.day": "default",
+          "greetings.greeting.noon": "default",
+          "corno": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "oi !",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "olá !",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello !",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "e aí ?!",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "oie !",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "suave irmão ?",
+            "intent": "greetings.suave"
+          },
+          {
+            "domain": "default",
+            "utterance": "e ai suave ?",
+            "intent": "greetings.suave"
+          },
+          {
+            "domain": "default",
+            "utterance": "e ai irmão ?",
+            "intent": "greetings.suave"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual é a boa ?",
+            "intent": "greetings.aboa"
+          },
+          {
+            "domain": "default",
+            "utterance": "Boa noite !",
+            "intent": "greetings.greeting.night"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bom Dia !",
+            "intent": "greetings.greeting.day"
+          },
+          {
+            "domain": "default",
+            "utterance": "Boa tarde!",
+            "intent": "greetings.greeting.noon"
+          },
+          {
+            "domain": "default",
+            "utterance": "corno",
+            "intent": "corno"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "oi": 1,
+              "ola": 1,
+              "hell": 1,
+              "e": 1,
+              "ai": 1,
+              "oie": 1,
+              "suav": 1,
+              "irma": 1,
+              "qual": 1,
+              "a": 1,
+              "boa": 1,
+              "noit": 1,
+              "bom": 1,
+              "dia": 1,
+              "tard": 1,
+              "corn": 1
+            },
+            "intents": {
+              "greetings.hello": 1,
+              "greetings.suave": 1,
+              "greetings.aboa": 1,
+              "greetings.greeting.night": 1,
+              "greetings.greeting.day": 1,
+              "greetings.greeting.noon": 1,
+              "corno": 1
+            },
+            "intentFeatures": {
+              "greetings.hello": {
+                "oi": 1,
+                "ola": 1,
+                "hell": 1,
+                "e": 1,
+                "ai": 1,
+                "oie": 1
+              },
+              "greetings.suave": {
+                "suav": 1,
+                "irma": 1,
+                "e": 1,
+                "ai": 1
+              },
+              "greetings.aboa": {
+                "qual": 1,
+                "e": 1,
+                "a": 1,
+                "boa": 1
+              },
+              "greetings.greeting.night": {
+                "boa": 1,
+                "noit": 1
+              },
+              "greetings.greeting.day": {
+                "bom": 1,
+                "dia": 1
+              },
+              "greetings.greeting.noon": {
+                "boa": 1,
+                "tard": 1
+              },
+              "corno": {
+                "corn": 1
+              }
+            },
+            "featuresToIntent": {
+              "oi": [
+                "greetings.hello"
+              ],
+              "ola": [
+                "greetings.hello"
+              ],
+              "hell": [
+                "greetings.hello"
+              ],
+              "e": [
+                "greetings.hello",
+                "greetings.suave",
+                "greetings.aboa"
+              ],
+              "ai": [
+                "greetings.hello",
+                "greetings.suave"
+              ],
+              "oie": [
+                "greetings.hello"
+              ],
+              "suav": [
+                "greetings.suave"
+              ],
+              "irma": [
+                "greetings.suave"
+              ],
+              "qual": [
+                "greetings.aboa"
+              ],
+              "a": [
+                "greetings.aboa"
+              ],
+              "boa": [
+                "greetings.aboa",
+                "greetings.greeting.night",
+                "greetings.greeting.noon"
+              ],
+              "noit": [
+                "greetings.greeting.night"
+              ],
+              "bom": [
+                "greetings.greeting.day"
+              ],
+              "dia": [
+                "greetings.greeting.day"
+              ],
+              "tard": [
+                "greetings.greeting.noon"
+              ],
+              "corn": [
+                "corno"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "oi",
+                "ola",
+                "hell",
+                "e",
+                "ai",
+                "oie",
+                "suav",
+                "irma",
+                "qual",
+                "a",
+                "boa",
+                "noit",
+                "bom",
+                "dia",
+                "tard",
+                "corn"
+              ],
+              "intents": [
+                "greetings.hello",
+                "greetings.suave",
+                "greetings.aboa",
+                "greetings.greeting.night",
+                "greetings.greeting.day",
+                "greetings.greeting.noon",
+                "corno"
+              ],
+              "perceptrons": [
+                [
+                  7.003170967102051,
+                  7.003175258636475,
+                  7.003180027008057,
+                  2.514137029647827,
+                  4.4845476150512695,
+                  7.002979755401611,
+                  -14.279882431030273,
+                  -14.279803276062012,
+                  -1.9703696966171265,
+                  -1.9703696966171265,
+                  -5.855901718139648,
+                  -1.977601170539856,
+                  -3.641303777694702,
+                  -3.641303777694702,
+                  -1.9033621549606323,
+                  -7.282553195953369,
+                  7.282635597166534
+                ],
+                [
+                  -0.6326441168785095,
+                  -0.6236793994903564,
+                  -0.6080991625785828,
+                  5.208566665649414,
+                  6.238638401031494,
+                  -0.4304809272289276,
+                  12.577413558959961,
+                  12.540526390075684,
+                  -0.9549187421798706,
+                  -0.9549187421798706,
+                  -1.379414677619934,
+                  -0.19204597175121307,
+                  -0.46711263060569763,
+                  -0.46711263060569763,
+                  -0.1262492686510086,
+                  -0.6505080461502075,
+                  -10.256954191481746
+                ],
+                [
+                  -0.09246361255645752,
+                  -0.08891436457633972,
+                  -0.08550063520669937,
+                  2.747354030609131,
+                  -2.2665414810180664,
+                  -0.06787412613630295,
+                  -0.5719192028045654,
+                  -0.5230226516723633,
+                  5.013895511627197,
+                  5.013895511627197,
+                  1.9913794994354248,
+                  -1.511919617652893,
+                  -0.1109851524233818,
+                  -0.1109851524233818,
+                  -1.5105671882629395,
+                  -0.09624513238668442,
+                  -0.48081170712986154
+                ],
+                [
+                  -0.46622657775878906,
+                  -0.4661460518836975,
+                  -0.4661458432674408,
+                  -1.591750144958496,
+                  -0.15111014246940613,
+                  -0.46614575386047363,
+                  -0.25309911370277405,
+                  -0.24292129278182983,
+                  -1.425229787826538,
+                  -1.425229787826538,
+                  3.976064682006836,
+                  9.843500137329102,
+                  -0.3289494216442108,
+                  -0.3289494216442108,
+                  -4.4422078132629395,
+                  -0.4671693742275238,
+                  0.46614583290385314
+                ],
+                [
+                  -0.7663716673851013,
+                  -0.7632865309715271,
+                  -0.7619596123695374,
+                  -0.47322311997413635,
+                  -0.40444543957710266,
+                  -0.761760950088501,
+                  -0.42486435174942017,
+                  -0.407757967710495,
+                  -0.05865960195660591,
+                  -0.05865960195660591,
+                  -0.6514987349510193,
+                  -0.2193024456501007,
+                  6.76197624206543,
+                  6.76197624206543,
+                  -0.34902799129486084,
+                  -0.7712754011154175,
+                  0.7617613827276268
+                ],
+                [
+                  -0.4807632565498352,
+                  -0.4766368865966797,
+                  -0.4733853042125702,
+                  -1.6232939958572388,
+                  -0.1950317919254303,
+                  -0.47052088379859924,
+                  -0.28097179532051086,
+                  -0.2691776752471924,
+                  -1.4159283638000488,
+                  -1.4159283638000488,
+                  3.9818062782287598,
+                  -4.443880558013916,
+                  -0.2310386300086975,
+                  -0.2310386300086975,
+                  9.841827392578125,
+                  -0.4857124388217926,
+                  0.46207745324230215
+                ],
+                [
+                  -1.5693880319595337,
+                  -1.5693879127502441,
+                  -1.5693879127502441,
+                  -0.8401899337768555,
+                  -0.7291984558105469,
+                  -1.5693879127502441,
+                  -0.7943750619888306,
+                  -0.775013267993927,
+                  -0.09780651330947876,
+                  -0.09780651330947876,
+                  -1.083473563194275,
+                  -0.48655879497528076,
+                  -0.7846941351890564,
+                  -0.7846941351890564,
+                  -0.4859148859977722,
+                  12.716320991516113,
+                  1.5693888085994914
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "oi !"
+      ],
+      [
+        "pt",
+        "olá !"
+      ],
+      [
+        "pt",
+        "hello !"
+      ],
+      [
+        "pt",
+        "e aí ?!"
+      ],
+      [
+        "pt",
+        "oie !"
+      ],
+      [
+        "pt",
+        "suave irmão ?"
+      ],
+      [
+        "pt",
+        "e ai suave ?"
+      ],
+      [
+        "pt",
+        "e ai irmão ?"
+      ],
+      [
+        "pt",
+        "qual é a boa ?"
+      ],
+      [
+        "pt",
+        "Boa noite !"
+      ],
+      [
+        "pt",
+        "Bom Dia !"
+      ],
+      [
+        "pt",
+        "Boa tarde!"
+      ],
+      [
+        "pt",
+        "corno"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "pt": {
+        "greetings.hello": [
+          {
+            "answer": "Olá ! Eu sou o WhatsappBot e estou aqui para ajuda-lo. \nPara pesquisar alguma coisa, por favor insira o comando *\"pesquisar\"* e o que você deseja pesquisar"
+          }
+        ],
+        "greetings.aboa": [
+          {
+            "answer": "A boa é o seguinte irmão. Eu sou o WhatsappBot e estou aqui para ajuda-lo. \nPara pesquisar alguma coisa, por favor insira o comando *\"pesquisar\"* e o que você deseja pesquisar"
+          }
+        ],
+        "greetings.suave": [
+          {
+            "answer": "Suave ! Eu sou o WhatsappBot e estou aqui para ajuda-lo. \nPara pesquisar alguma coisa, por favor insira o comando *\"pesquisar\"* e o que você deseja pesquisar"
+          },
+          {
+            "answer": "Suave irmão! Eu sou o WhatsappBot e estou aqui para ajuda-lo. \nPara pesquisar alguma coisa, por favor insira o comando *\"pesquisar\"* e o que você deseja pesquisar"
+          }
+        ],
+        "greetings.greeting.night": [
+          {
+            "answer": "Boa noite ! Eu sou o WhatsappBot e estou aqui para ajuda-lo. \nPara pesquisar alguma coisa, por favor insira o comando *\"pesquisar\"* e o que você deseja pesquisar"
+          }
+        ],
+        "greetings.greeting.day": [
+          {
+            "answer": "Bom dia ! Eu sou o WhatsappBot e estou aqui para ajuda-lo. \nPara pesquisar alguma coisa, por favor insira o comando *\"pesquisar\"* e o que você deseja pesquisar"
+          }
+        ],
+        "greetings.greeting.noon": [
+          {
+            "answer": "Boa tarde ! Eu sou o WhatsappBot e estou aqui para ajuda-lo. \nPara pesquisar alguma coisa, por favor insira o comando *\"pesquisar\"* e o que você deseja pesquisar"
+          }
+        ],
+        "corno": [
+          {
+            "answer": "Corno é seu pai ! Eu sou o WhatsappBot e estou aqui para ajuda-lo. \nPara pesquisar alguma coisa, por favor insira o comando *\"pesquisar\"* e o que você deseja pesquisar"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
