@@ -7,7 +7,7 @@ O Brasil se encontra na segunda posição global dentre os países que mais gast
 
 Tirar um tempo para navegar na internet e fazer aquela "comprinha" no melhor site e no melhor preço pode ser uma tarefa árdua. Por essa razão decidi criar o WhatsappBot !! Um robô que faz uma busca no **Zoom.br** do produto que você deseja comprar, retornando para você uma lista de produtos com preços e as lojas virtuais mais conceituada com o produto disponível.
 
-Para realização desse projeto foi necessário usar o **Venom-Bot** para fazer integração com Whatsapp associado ao **Natural language processing** para deixar o bot mais um pouquinho inteligente (Não foi muita coisa, so brinquei um pouco rsrsrs). E uma das partes principais do projeto que é extração dessas inofrmações no site do **Zoom.br** utilizei o **Puppeteer**. Como bônus, deixei um servidor **Express** para que a pesquisa de produtos esteja também disponivel em forma de API.
+Para realização desse projeto foi necessário usar o **Venom-Bot** para fazer integração com Whatsapp associado ao **Natural language processing** para deixar o bot mais um pouquinho inteligente (Não foi muita coisa, só brinquei um pouco rsrsrs). E uma das partes principais do projeto que é extração dessas inofrmações no site do **Zoom.br** utilizei o **Puppeteer**. Como bônus, deixei um servidor **Express** para que a pesquisa de produtos esteja também disponivel em forma de API.
 
 #### Me siga no instagram ([@luteroelavoco](https://www.instagram.com/luteroelavoco/), lá tem um video no meu Reels mostrando o funcionamento do projeto.
 
