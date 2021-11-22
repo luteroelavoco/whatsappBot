@@ -46,7 +46,7 @@ Iniciando com olá !
 ![](public/1-ola.PNG)	
 
 ```sh	
-Iniciando Bom dia !
+Iniciando com Bom dia !
 ```	
 
 ![](public/2-bomdia.PNG)	
@@ -73,4 +73,6 @@ Após "Pesquisar" o robô diz para aguardar.
 E no final de tudo ele retorna uma lista com preço e link para comprar esses produtos
 ```	
 ![](public/5-mostrar1.PNG)	
+
+
 ![](public/6-mostrar2.PNG)
