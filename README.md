@@ -76,3 +76,18 @@ E no final de tudo ele retorna uma lista com preço e link para comprar esses pr
 
 
 ![](public/6-mostrar2.PNG)
+
+## Meta	
+
+Author - Lutero Elavoco
+
+programmer -  [Lutero Elavoco](https://www.linkedin.com/in/l%C3%BAtero-elavoco-5951b619b/) - luteroelavoco90@gmail.com	
+
+
+## Contributing 	
+
+1. Fork it (https://github.com/luteroelavoco/whatsappBot)	
+2. Create your feature branch (`git checkout -b feature/fooBar`)	
+3. Commit your changes (`git commit -am 'Add some fooBar'`)	
+4. Push to the branch (`git push origin feature/fooBar`)	
+5. Create a new Pull Request
